@@ -65,7 +65,7 @@ const chai =  () => {
 // Returning an object with implicit return needs parentheses
 const addTwo = (num1, num2) => ({ username: "hitesh" })
 
-console.log(addTwo(3, 4))
+console.log(addTwo())
 // ✅ Output: { username: 'hitesh' }
 // This shows you're returning an object literal
 
