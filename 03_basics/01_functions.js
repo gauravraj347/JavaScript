@@ -45,3 +45,50 @@ function loginUserMessage(username) {
     return `${username} just logged in`
 }
 */
+
+
+
+
+
+// Function using rest parameter to collect all arguments into an array
+function calculateCartPrice(...num1) {
+    return num1; // Returns the array of all prices passed
+}
+
+console.log(calculateCartPrice(200, 203, 400));
+// Output: [200, 203, 400]
+
+// Object representing a user
+const user = {
+    username: "gaurav",
+    price: 199
+};
+
+// Function to handle any object with username and price properties
+function handleobject(anyobject) {
+    console.log(`username ${anyobject.username} and price ${anyobject.price}`);
+}
+
+// Uncommented version passes the user object directly
+// handleobject(user);
+
+// Call the function by passing an object literal directly
+handleobject({
+    username: "sam",
+    price: 399
+});
+// Output: username sam and price 399
+
+// Array of numbers
+const myNewArray = [500.399, 345, 566];
+
+// Function to return the second element of the array (index 1)
+function returnSecondValue(getarray) {
+    return getarray[1];
+}
+
+console.log(returnSecondValue(myNewArray));
+// Output: 345
+
+console.log(returnSecondValue([500, 444, 333]));
+// Output: 444
