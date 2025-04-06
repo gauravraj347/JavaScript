@@ -15,7 +15,3 @@ accountState;
 
 console.table([accountId,accountEmail,accountpassowrd,accountCity,accountState])
 
-
-
-console (3+3)
-console ("golu")
